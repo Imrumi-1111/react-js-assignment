@@ -1,0 +1,29 @@
+.Game{
+    border-radius: 10px solid pink;
+    background-color: rgb(114, 196, 196);
+    display: flexbox;
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    font-style: arial;
+    font-size: 25px;
+
+}
+.label{
+    height: 50px;
+    width: 300px;
+    font-size: 25px;
+}
+
+.btn{
+    background-color: rgb(202, 197, 190);
+    height: 73px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 20px;
+
+
+}
