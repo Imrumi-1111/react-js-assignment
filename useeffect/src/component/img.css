@@ -1,0 +1,20 @@
+#my-image{
+    text-emphasis-style: bold;
+    color: black;
+    padding: 20px;
+    border: 1px solid ;
+    width: 430px;
+    height: 300px;
+    
+    object-fit: scale-down;
+
+}
+#btn{
+    width: 130px;
+    height: fit-content;
+    color: royalblue;
+    margin-top: 40px;
+    border-radius: 50%;
+
+
+}
