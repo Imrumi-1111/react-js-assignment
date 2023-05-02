@@ -1,0 +1,25 @@
+.user-list{
+    border: 3px solid rgb(177, 189, 155);
+    
+
+}
+.user-cards{
+    border: 30px solid whitesmoke;
+    
+    padding-top: 10px;
+    
+    
+    
+
+}
+.user-card{
+    border: 10px solid rgb(56, 18, 87);
+    
+    padding-left: 30px;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-top-left-radius: 10%;
+    padding-top: 10px;
+
+}
