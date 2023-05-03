@@ -1,0 +1,13 @@
+.card{
+    border: 50px solid royalblue;
+    height: 400px;
+    width: 500px;
+   
+    font-size: 40px;
+
+}
+.btn{
+    border-radius: 10%;
+    height: 100px;
+    width: 100px;
+}
