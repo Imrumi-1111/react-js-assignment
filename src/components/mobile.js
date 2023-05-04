@@ -157,8 +157,10 @@ const OTPGenerator = () => {
         <button class="button"type="submit">Get OTP</button>
       </form>
       {error && <p className="error">{error}</p>}
-      {success && <p className="success">OTP sent successfully.</p>}
+      {success && <p className="success">OTP sent successfully.</p>} 
+      
     </div>
+    // forgot to mention in the video to render the error and success message I used this ERROR && and success&&
   );
 };
 
