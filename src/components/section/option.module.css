@@ -1,0 +1,29 @@
+.option{
+    display: none;
+}
+.menu{
+    align-items: right;
+}
+
+
+
+
+
+
+
+@media screen and (min-width : 1024px){
+    .option{
+        display: flex;
+        font-size: 2rem;
+        border: 3px solid rgb(8, 32, 240);
+        background-color: rgb(4, 4, 75);
+        justify-content: space-around;
+        gap: 120px;
+        align-items: center;
+        color: blue;
+        padding-left: 40px;
+    }
+    .menu{
+        display: none;
+    }
+}
