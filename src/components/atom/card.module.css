@@ -1,0 +1,21 @@
+.name{
+    border: 1px solid whitesmoke;
+    width: 70%;
+    display: grid;
+    margin: auto;
+    padding: 1rem 2rem ;
+    font-size: 15px;
+    background-color: aliceblue;
+}
+
+
+.image{
+    border: 1px solid white;
+    height: 90px;
+    width: 150px;
+    border-radius: 150%;
+}
+.change{
+    color: blue;
+
+}

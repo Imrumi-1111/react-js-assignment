@@ -1,0 +1,11 @@
+.scroll{
+    border: 1px solid whitesmoke;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    padding: 2rem 2rem;
+    overflow: auto;
+    font-size: 1px;
+    gap: 50px;
+    background-color: rgb(235, 247, 247);
+}
