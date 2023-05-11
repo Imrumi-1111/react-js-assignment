@@ -1,0 +1,22 @@
+.Board{
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(47, 50, 255);
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+    
+}
+.border{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.start{
+    width: 90px;
+    height: 40px;
+    align-items: center;
+}
