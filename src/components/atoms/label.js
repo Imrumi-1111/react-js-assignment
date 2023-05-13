@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import TodoForm from "./todoitem";
 import TodoList from "./todolist";
 import PendingTasks from './pending'
+
 import styles from "./label.module.css";
 
 const Todo = () => {
@@ -32,8 +33,10 @@ const Todo = () => {
     <div className={styles.Label}>
       <div className={styles.line}>
       <h1>Todo List</h1>
+      <h3>Pending{todos.length}Task</h3>
       <PendingTasks count={pendingTasks}/>
       <TodoForm addTodo={addTodo} />
+      {/* <TodoItem task={task}/> */}
       <TodoList
         todos={todos}
         handleToggle={handleToggle}
