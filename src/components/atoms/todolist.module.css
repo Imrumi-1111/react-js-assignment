@@ -1,0 +1,17 @@
+/* .list {
+    background-color: #0077ff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  } */
+  .TodoList{
+    text-align: center;
+    padding-left: 12rem;
+    padding-top: 2rem;
+    
+  }
