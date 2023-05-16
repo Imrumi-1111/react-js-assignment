@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+/* .list{
+  display: ;
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +38,22 @@
   to {
     transform: rotate(360deg);
   }
+  
 }
+@media screen and (min-width : 1024px){
+  .option{
+      display: flex;
+      font-size: 2rem;
+      border: 3px solid rgb(8, 32, 240);
+      background-color: rgb(4, 4, 75);
+      justify-content: space-around;
+      gap: 120px;
+      align-items: center;
+      color: blue;
+      padding-left: 40px;
+  }
+  .list{
+      display: none;
+  }
+}
+

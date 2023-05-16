@@ -8,10 +8,10 @@ export default function Option(){
         'Home',
         'About',
         'Projects',
-        'Videos',
+        'Register',
         'Contact',
-        'Login',
-        'Hero'
+        'Login'
+        
     ]
     
     return(
