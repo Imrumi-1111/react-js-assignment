@@ -4,10 +4,21 @@
 .menu{
     align-items: right;
 }
-
-
-
-
+.body{
+    border: 1rem solid white;
+    display: flex;
+    justify-content: space-around;
+    /* margin: auto;
+    width: 50rem;
+    height: 20rem; */
+}
+.leftBody{
+    border: 1rem solid white;
+    background-color: rgb(221, 0, 147);
+    width: 50rem;
+    height: 30rem;
+    
+}
 
 
 
@@ -15,7 +26,7 @@
     .option{
         display: flex;
         font-size: 2rem;
-        border: 3px solid rgb(8, 32, 240);
+        border: 1rem solid rgb(8, 32, 240);
         background-color: rgb(4, 4, 75);
         justify-content: space-around;
         gap: 120px;
@@ -25,5 +36,18 @@
     }
     .menu{
         display: none;
+    }
+    .body{
+        border: 1rem solid white;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 1rem;
+    }
+    .leftBody{
+        border: 1rem solid white;
+        background-color: rgb(185, 41, 41);
+        width: 50rem;
+        height: 27rem;
+        
     }
 }

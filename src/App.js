@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       
         <Header/>
-        <Option/>
+        
         <div className="list">
           <ul>
         <p onClick={handleRedirect}><Link to={'./about'}>About</Link></p>
@@ -34,7 +34,7 @@ function App() {
         <p onClick={handleRedirect}><Link to={'./register'}>Register</Link></p>
         </ul>
         </div>
-      
+        <Option/>
     </div>
   );
 }

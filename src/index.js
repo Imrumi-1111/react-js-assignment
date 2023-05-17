@@ -9,6 +9,7 @@ import  Contact from '../src/components/pages/contact'
 import  Home from '../src/components/pages/home'
 import  Projects from '../src/components/pages/projects'
 import  Register from '../src/components/pages/register'
+import Option from '../src/components/section/option'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -37,8 +38,8 @@ const router = createBrowserRouter([
   },
 
   {
-    path: '/home',
-    element: <Home/>
+    path: '/option',
+    element: <Option/>
   },
 
   {
