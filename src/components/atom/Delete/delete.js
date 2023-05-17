@@ -1,14 +1,11 @@
 import styles from './delete.module.css'
-import React,{ useState } from 'react'
 
-export default function Delete(){
-    
+import Arraylist from '../User/user'
 
-    
-    return(
-        <div>
-            <button  >x</button>
-        </div>
-    )
-
+export default function Main() {
+  return (
+    <div className={styles.Main}>
+        <Arraylist/>
+    </div>
+  )
 }

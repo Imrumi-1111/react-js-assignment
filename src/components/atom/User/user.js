@@ -3,58 +3,51 @@ import React,{ useState } from 'react'
 //import Delete from '../Delete/delete'
 
 
-
-const TodoList = () => {
-  const [name, setName] = useState([]);
-  const [newName, setNewName] = useState('');
-
-  const addName = () => {
-    if (newName.trim() !== '') {
-      setName([...name, newName]);
-      setNewName('');
-    }
-  };
+export default function Arraylist() {
+  const [todos, setTodos] = useState([]);
+  const [inputValue, setInputValue] = useState('');
 
   const handleInputChange = (event) => {
-    setNewName(event.target.value);
+      setInputValue(event.target.value);
   };
 
-  const handleKeyPress = (event) => {
-    if (event.key === 'Enter') {
-      addName();
-    }
+  const handleAddTodo = () => {
+      if (inputValue.trim() !== '') {
+          setTodos([...todos, inputValue.trim()]);
+          setInputValue('');
+      }
   };
 
-  function handleDelete(i){
-    setName(name.filter((data) => data.i !== i));
-};
+  const handleDeleteTodo = (index) => {
+      const newTodos = [...todos];
+      newTodos.splice(index, 1);
+      setTodos(newTodos);
+  };
 
-
-
-return (
-    <div>
-        
-      <div>
-        
-        <input
-          type="text"
-          value={newName}
-          onChange={handleInputChange}
-          onClick={handleKeyPress}
-          placeholder="Enter name"
-        />
-        <button onClick={addName}>+</button>
-      </div>
-      <ul>
-        {name.map((data, i) => (
-          <li key={i}>{data}</li>
-        ))}
-        
-      </ul>
+  return (
+    <>   <h1 className={styles.textt}>Delete Name</h1>
+    <hr></hr>
+   
+      <div className={styles.con}>
+          
+       <div className={styles.another}>
+          <div className={styles.center}>
+          <div  className={styles.conn}>
      
-      <button onClick={handleDelete}>x</button>
-    </div>
+     <input type="text" className={styles.text}
+     value={inputValue} onChange={handleInputChange} />
+     <button className={styles.add} onClick={handleAddTodo}>Add</button></div>
+         <ul>
+              {todos.map((todo, index) => (
+                  <li className={styles.list} key={index}>
+                      {todo}
+                      <button className={styles.btn} onClick={() => handleDeleteTodo(index)}>Delete</button>
+                  </li>
+              ))}
+              </ul>
+       </div>
+          </div>
+      </div>
+      </>
   );
-};
-
-export default TodoList;
+}

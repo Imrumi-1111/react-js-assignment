@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-import UserName from './components/atom/User/user'
+import Main from './components/atom/Delete/delete'
 
 function App() {
   
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <UserName />
+        <Main />
         
       </header>
     </div>
