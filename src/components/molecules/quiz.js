@@ -108,12 +108,7 @@ export default function Quiz() {
 
     return (
         <div className={styles.Quiz}>
-            <img
-                src="./images/quizR.webp"
-                alt="pic"
-                border="1px solid white"
-                width={400}
-            />
+            
             <h2>Quiz</h2>
             {isQuizCompleted ? (
                 <div className={styles.tag}>
@@ -147,10 +142,12 @@ export default function Quiz() {
                         <button className={styles.btn} onClick={handleSubmitClick}>Submit</button>
                     ) : (
                         <button className={styles.btn} onClick={handleNextClick}>Next</button>
+                    
                     )}
+                    <Timer />
                 </div>
             )}
-            <Timer/>
+            
         </div>
     );
 };

@@ -1,30 +1,38 @@
-import React,{ useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 
-export default function Timer({}){
-    const [time, setTime] = useState(60)
-    useEffect(()=>{
-        const timer = setInterval(()=>{
-            setTime((prevTime)=>
-            prevTime-1)
-        },1000)
-        return()=>clearInterval(time)
-    },[])
-    const resetAll = () =>{
-        setTime(60)
-    }
+export default function Timer({}) {
+    const [time, setTime] = useState(60);
+
     useEffect(() => {
-        if (time === 0) {
-          resetAll(true);
-        }
-      }, [time]);
-    
-    
+        const timer = setInterval(() => {
+            setTime((prevTime) => {
+                if (prevTime > 0) {
+                    return prevTime - 1;
+                } else {
+                    clearInterval(timer);
+                    return prevTime;
+                }
+            });
+        }, 1000);
 
+        return () => {
+            clearInterval(timer);
+        };
+    }, []);
 
-    return(
+    const formatTime = (seconds) => {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+
+        const formattedMinutes = String(minutes).padStart(2, '0');
+        const formattedSeconds = String(remainingSeconds).padStart(2, '0');
+
+        return `${formattedMinutes}:${formattedSeconds}`;
+    };
+
+    return (
         <div>
-            Time remain : {time}s
-
+            <p>Time remains  {formatTime(time)}</p>
         </div>
     )
 }
