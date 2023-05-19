@@ -1,5 +1,6 @@
 import styles from './quiz.module.css'
 import React, { useState } from 'react'
+import Timer from './timer'
 
 
 export default function Quiz() {
@@ -106,7 +107,7 @@ export default function Quiz() {
     };
 
     return (
-        <div className={StyleSheet.Quiz}>
+        <div className={styles.Quiz}>
             <img
                 src="./images/quizR.webp"
                 alt="pic"
@@ -149,6 +150,7 @@ export default function Quiz() {
                     )}
                 </div>
             )}
+            <Timer/>
         </div>
     );
 };
