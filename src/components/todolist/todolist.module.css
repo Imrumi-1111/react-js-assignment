@@ -1,0 +1,31 @@
+.TodoList{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 7vh;
+   
+}
+.field{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    font-size: 1.25rem;
+    width: 100%;
+    margin-left: 1rem;
+    gap: 20px;
+}
+
+.btn{
+    border: 2px solid black;
+    width: fit-content;
+    height: 30px;
+    box-shadow: 0rem 0rem 1rem;
+}
+.Btn{
+    border: 2px solid black;
+    width: fit-content;
+    height: 30px;
+    
+
+}
