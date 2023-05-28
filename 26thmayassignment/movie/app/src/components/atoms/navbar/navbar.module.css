@@ -1,0 +1,11 @@
+.Navbar{
+    position: sticky;
+    border: 0.01rem solid whitesmoke;
+    display: flex;
+    font-size: 2rem;
+    background-color:whitesmoke;
+    justify-content: space-around;
+    align-items: left;
+    color: whitesmoke;
+    
+}
