@@ -1,11 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-import Home from './components/pages/Homepage/home';
+//import Details from './components/pages/Details/Details';
+//import Home from './components/pages/Homepage/home';
+import SignUp from './components/pages/RegisterPage/register';
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+      {/* <Home/> */}
+      <div>
+      <SignUp/>
+      {/* <Details/> */}
+      </div>
     </div>
   );
 }

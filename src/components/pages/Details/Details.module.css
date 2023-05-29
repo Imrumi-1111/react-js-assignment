@@ -1,4 +1,4 @@
-.body {
+.Details{
   border: 1rem solid whitesmoke;
   margin: auto;
   margin-top: 8%;
@@ -8,9 +8,12 @@
   box-shadow: 0rem 0rem 6rem;
   border-radius: 3%;
 }
-
 .Icon {
-  margin-top: 3%;
-  display: flex;
-  gap: 19rem;
-}
+    margin-top: 3%;
+    display: flex;
+    gap: 19rem;
+  }
+  .p{
+    text-align: end;
+    padding-right: 6rem;
+  }

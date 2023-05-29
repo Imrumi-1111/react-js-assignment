@@ -1,11 +1,36 @@
-import React from 'react'
+import { FaTwitter } from 'react-icons/fa';
+import { RxCross2 } from 'react-icons/rx';
+import GoogleButton from '../../atoms/button/google';
+import AppleButton from '../../atoms/button/apple';
+import Text from '../../atoms/text/text';
+import CreateAccountBtn from '../../atoms/button/createaccount';
+import styles from './register.module.css'
 
-const Register = () => {
-  return (
-    <div>
-      <h1>this is Register page</h1>
-    </div>
-  )
+export default function SignUp(){
+    return(
+        <div className={styles.body}>
+        <div className={styles.Icon}>
+            <RxCross2/>
+            <FaTwitter
+            color='skyblue'
+            />
+            </div>
+            
+            <h1>Join Twitter today</h1>
+            <GoogleButton/>
+            <br/>
+            <br/>
+            <AppleButton/>
+            <br/>
+            <br/>
+            <div className={styles.or}><span>------or------</span></div>
+            <br/>
+            <br/>
+            <CreateAccountBtn/>
+            <br/>
+            <br/>
+            <Text/>
+        
+        </div>
+    )
 }
-
-export default Register
