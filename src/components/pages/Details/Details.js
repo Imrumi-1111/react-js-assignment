@@ -4,6 +4,7 @@ import DetailsText from './detailsText'
 import Input from '../../atoms/inputField/name';
 import { Link } from 'react-router-dom';
 import GroupedSelect from '../../atoms/inputField/select';
+import SignUpButton from '../../atoms/button/signup';
 
 export default function Details(){
     return(
@@ -16,6 +17,9 @@ export default function Details(){
             <p className={styles.p}><Link to="">Use email instead</Link></p>
             <DetailsText/>
             <GroupedSelect/>
+            <br/>
+            <br/>
+            <SignUpButton/>
             
         </div>
     )

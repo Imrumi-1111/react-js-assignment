@@ -8,8 +8,9 @@ import Select from '@mui/material/Select';
 export default function GroupedSelect() {
   return (
     <div>
-      <FormControl sx={{ m: 1, minWidth: 120 }}>
-        <InputLabel htmlFor="grouped-native-select">Month</InputLabel>
+      <FormControl sx={{ m: 1, width: "12rem" }}>
+        <InputLabel htmlFor="grouped-native-select"
+        >Month</InputLabel>
         <Select native defaultValue="" id="grouped-native-select" label="Grouping">
           <option aria-label="None" value="" />
             <option value={1}>January</option>
