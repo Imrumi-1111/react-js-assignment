@@ -1,5 +1,5 @@
 .body {
-  border: 1rem solid whitesmoke;
+  border: 1rem solid white;
   margin: auto;
   margin-top: 8%;
   width: 40rem;
@@ -13,4 +13,5 @@
   margin-top: 3%;
   display: flex;
   gap: 19rem;
+  font-size: 2rem;
 }

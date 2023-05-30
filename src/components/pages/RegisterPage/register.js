@@ -23,7 +23,7 @@ export default function SignUp(){
             <AppleButton/>
             <br/>
             <br/>
-            <div className={styles.or}><span>------or------</span></div>
+            <div className={styles.or}><span>or</span></div>
             <br/>
             <br/>
             <CreateAccountBtn/>

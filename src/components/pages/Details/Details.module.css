@@ -1,5 +1,5 @@
-.Details{
-  border: 1rem solid whitesmoke;
+.Details {
+  border: 1rem solid white;
   margin: auto;
   margin-top: 8%;
   width: 40rem;
@@ -9,11 +9,12 @@
   border-radius: 3%;
 }
 .Icon {
-    margin-top: 3%;
-    display: flex;
-    gap: 19rem;
-  }
-  .p{
-    text-align: end;
-    padding-right: 6rem;
-  }
+  margin-top: 3%;
+  display: flex;
+  gap: 19rem;
+  font-size: 2rem;
+}
+.p {
+  text-align: end;
+  padding-right: 6rem;
+}
