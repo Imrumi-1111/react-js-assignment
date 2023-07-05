@@ -1,11 +1,13 @@
 import './App.css';
-import StudentForm from './component/student/student';
+import Number from './component/Number/number';
+//import StudentForm from './component/student/student';
 
 function App() {
   return (
     <div className="App">
-      <h2>Student Details</h2>
-      <StudentForm />
+      <Number/>
+      {/* <h2>Student Details</h2>
+      <StudentForm /> */}
     </div>
   );
 }
