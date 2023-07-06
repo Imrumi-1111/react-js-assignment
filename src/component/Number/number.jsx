@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import styles from './number.module.css'
+import { useState } from "react";
+import styles from "./number.module.css";
 
-export default function Number(){
-    const [number, setNumber] = useState('');
+export default function Number() {
+  const [number, setNumber] = useState("");
   const [table, setTable] = useState([]);
 
   const handleInputChange = (e) => {
@@ -11,7 +11,7 @@ export default function Number(){
 
     // Generate the table based on the input number
     const newTable = [];
-    if (inputNumber !== '') {
+    if (inputNumber !== "") {
       for (let i = 1; i <= parseInt(inputNumber); i++) {
         newTable.push(i);
       }
@@ -28,20 +28,20 @@ export default function Number(){
         onChange={handleInputChange}
       />
       <div className={styles.table}>
-      <table>
-        <thead>
-          <tr>
-            <th>Number</th>
-          </tr>
-        </thead>
-        <tbody>
-          {table.map((num) => (
-            <tr key={num}>
-              <td>{num}</td>
+        <table>
+          <thead>
+            <tr>
+              <th>Number</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {table.map((num) => (
+              <tr key={num}>
+                <td>{num}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
